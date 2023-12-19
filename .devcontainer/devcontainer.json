@@ -11,7 +11,12 @@
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "extensions": ["xabikos.JavaScriptSnippets", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+      "extensions": [
+        "xabikos.JavaScriptSnippets",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "rvest.vs-code-prettier-eslint"
+      ],
       "settings": {
         "prettier.requireConfig": true,
         "editor.formatOnSave": true,
