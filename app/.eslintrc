@@ -1,5 +1,7 @@
 {
+  "extends": ["google"],
   "rules": {
-    "no-unused-vars": 0
+    "no-unused-vars": 0,
+    "indent": ["error", 2]
   }
 }
