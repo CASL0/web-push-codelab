@@ -1,0 +1,22 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+  "name": "Web Push Codelab",
+  "dockerComposeFile": ["compose.yml"],
+  "service": "app",
+  "forwardPorts": [8000],
+  "workspaceFolder": "/opt/app",
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "npm i",
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": ["xabikos.JavaScriptSnippets", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+      "settings": {
+        "prettier.requireConfig": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  }
+}
